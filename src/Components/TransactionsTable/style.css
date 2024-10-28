@@ -1,0 +1,64 @@
+ant-input {
+  border-radius: 8px; /* Slightly rounded corners */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.search-input:focus,
+.search-input-focused {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px inset !important; /* Soft shadow for depth */
+  outline: none; /* Remove default outline */
+  
+}
+.ant-table {
+  border: 1px solid #e4e4e47d; /* Table border */
+}
+
+ .search .ant-select-selector{
+  padding: 19px !important;
+
+}
+
+.search-input{
+  border: none;
+  box-shadow: var(--shadow);
+  padding: 0.5rem;
+  padding-left: 2.4rem;
+}
+.input-radio{
+  border-radius: 0.22rem !important;
+}
+.sIcon{
+  background-color: transparent;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 9px;
+  position: absolute;
+  margin-left: 32px;
+  left: 0;
+  z-index: 10;
+}
+.wrapper{
+  margin: 4px 2rem 3rem 2rem;
+  background-color: white;
+  border-radius: 8px;
+  padding: 28px 30px;
+  box-shadow: var(--shadow);
+}
+.wrapper p{
+  font-size: 1.5rem;
+  font-weight: 500;
+  opacity: 0.9;
+}
+.search-input::placeholder{
+  color: grey;
+}
+
+.ant-popover-inner{
+  margin: 0 65px;
+  padding: 16px 20px !important;
+}
+.ant-popover-inner button{
+  color: white;
+  padding: 15px 16px !important;
+  margin-top: 6px;
+}

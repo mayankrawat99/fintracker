@@ -1,0 +1,23 @@
+.ant-input:focus, 
+.ant-input-focused {
+  box-shadow: none !important; /* Remove focus shadow */
+  border-width: 0;
+  border-bottom-width:1px; /* Reset border color */
+  outline: none !important; /* Remove outline */
+}
+.ant-input-status-error {
+  border-width: 0 !important;
+  border-bottom-width:1px !important;
+  font-size: 0.87rem !important;   /* Remove the default shadow */
+}
+.custom-modal .ant-modal-content{
+  padding: 0 !important;
+  color: #ff4d4fd1;
+}
+.ant-select-selector{
+  border: none !important;
+    border-bottom: 1px solid var(--grey)!important ;
+}
+.ant-form-item-label{
+  padding-bottom: 0.3rem !important;
+}

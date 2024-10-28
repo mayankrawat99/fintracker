@@ -1,0 +1,33 @@
+.label-input{
+  text-transform: capitalize;
+  margin-bottom: 0.1rem;
+  font-size: 0.89rem;
+  opacity: 0.97;
+}
+.custom-input{
+border-width: 0;
+font-family: poppins;
+border-bottom-width:1px; 
+width: 100%;
+padding: 0.3rem 0.6rem;
+font-size: 0.9rem;
+transition: all ease-in-out 0.2s;
+opacity: 0.75;
+}
+.input-wrapper{
+  padding:  0.5rem 0  ;
+}
+
+.custom-input::placeholder{
+  font-size: 0.93rem;
+  opacity: 0.8;
+}
+.custom-input:focus{
+  outline: none;
+  border-color: var(--theme);
+}
+.custom-input:focus::placeholder {
+  color: var(--theme);
+  opacity: 0.7;
+
+}

@@ -1,0 +1,7 @@
+.anchor {
+  transition: color 0.3s ease;
+}
+
+.anchor svg:hover {
+  color: rgb(84, 84, 84); /* Change this to your desired hover color */
+}

@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+  --theme:#2870ff;
+  --dark:#2321a1;
+  --body:#c5cfdd21;
+  --white:#ffffff;
+  --black:#000000;
+  --grey:rgba(213, 213, 213, 0.75);
+  --lighttheme:#2b69e3e6;
+  --shadow:  rgba(100, 100, 111, 0.25) 0px 7px 29px 0px;
+}
+*{ margin: 0;
+padding: 0;
+box-sizing: border-box !important;
+font-family: "poppins", sans-serif ;
+}
+.ant-input{
+  font-family: 'poppins';
+}
+a{
+  text-decoration: none;
+}
+input{
+  font-family: "poppins", sans-serif;
+  
+}
+/* Media queries....
+----------------------------------------------- */
+
+@media (width<974px) {
+  .card-row{
+justify-content: flex-start;
+
+  }
+  .card:nth-child(3){
+ flex-grow: 0.47
+  }
+  .total{
+    font-size: 0.8rem;
+  }
+  .spanofpie{
+    font-size: 0.9rem;
+  }
+  .pie{
+  width: 36vw;
+  }
+  .parent{
+  gap: 20px;
+  }
+  .graph{
+   width: 60vw;
+  }
+  .wrapper p{
+    font-size: 1.4rem;
+  }
+  .tabletitle{
+    flex-wrap: wrap;
+  }
+}
+@media (width<900px) {
+   .parent{
+      flex-direction: column;
+      align-items: center;
+    height: 100%;
+      
+    }
+
+  .pie canvas {
+
+    width: 300px !important;  /* Force canvas to take full width */
+    height: 300px !important; /* Set the desired height */
+  }
+    .pie{
+      width: 90vw;
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .total{
+      top:55%;
+    }
+    .graph{
+      width: 91vw;
+     
+    }
+    .total{
+      font-size: 1.2;
+    }
+    .spanofpie{
+      font-size: 1.4rem;
+    }
+  }
+
+  /* Scroll Snap Styles (default) */
+@media (width<644px) {
+  .graph{
+    padding: 3.3rem 0px 2rem 0px;
+  }
+  .graph h2{
+    margin-left: 40px !important;
+  }
+  .titlebtn button{
+    padding: 7px 8px;
+    font-size: 13px;
+  }
+  .card-row {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory; /* Snap horizontally for supported browsers */
+      -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+      padding: 20px ;
+     margin: 0;
+height: auto;
+  
+  }
+
+/* WebKit browsers */
+.card-row::-webkit-scrollbar {
+  height: 8px; /* Height of the scrollbar */
+}
+
+.card-row::-webkit-scrollbar-thumb {
+   /* Color of the scrollbar handle */
+   background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px; /* Rounded corners */
+}
+
+.card-row::-webkit-scrollbar-track {
+margin: 0 22px;
+  border-radius: 10px; /* Rounded corners */
+}
+
+  .total{
+    top:48%;
+  }
+  .spanofpie{
+    font-size: 1rem;
+  }
+
+  .card-row > .card {
+      scroll-snap-align: center; /* Center each item */
+      flex: 0 0 auto;
+      margin: 0 10px; /* Spacing between cards */
+  }
+  .wrapper{
+    justify-content: center;
+    padding: 20px 15px ;
+  }
+  .ant-radio-button-wrapper{
+  padding: 10px 12px !important;
+  /* height: 20px !important; */
+  display: flex !important;
+  width: max-content !important;
+  align-items: center !important;
+  font-size: 13px;
+}
+.ant-radio-group{
+  display:flex ;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+  .tabletitle{
+    justify-content: center !important;
+    margin-bottom: 15px !important;
+
+
+  }
+  .search-input{
+width: 155vw;
+  }
+  .search{
+    padding: 20px 20px 0px 20px !important;
+  }
+  .sIcon{
+    margin-left: 22px;
+  }
+  .wrapper{
+    margin: 20px;
+  }
+.ant-table-container{
+  font-size: 14px !important;
+}
+.parent{
+  gap: 8px;
+}
+}
+
+/* Smooth Scroll Fallback */
+.card-row.no-snap {
+  scroll-behavior: smooth; /* Smooth scrolling for unsupported browsers */
+}
+
+

@@ -1,0 +1,58 @@
+.graph{
+  background-color: white;
+    padding: 3.3rem 15px 2rem 15px;
+    margin: 0.3rem 0 1rem 0;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    width: 61vw;
+    height: 449px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.parent{
+  display: flex;
+  flex-direction: row;
+  padding: 0 38px;
+  gap: 3rem;
+  justify-content: center;
+  height: 449px;
+ 
+}
+.pie{
+  background-color: white;
+    padding: 2rem 2rem;
+    margin: 0.3rem 0rem 1rem 0;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    width: 34vw;
+    height: 449px;
+    position: relative;
+    flex: 1;
+}
+.total{
+
+  font-weight: 500;
+  font-size: 1rem;
+  position: absolute;
+  left: 50%; /* Center horizontally */
+  top: 46%;
+  transform: translate(-50%, -50%); /* Shift back by half its width and height */
+  width: max-content;
+  color: #413e3e94;
+  display: flex;
+ flex-direction: column;
+   background-color: transparent;
+}
+.spanofpie{
+  color: #000000;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 25px;
+    padding: 2px 10px;
+
+}

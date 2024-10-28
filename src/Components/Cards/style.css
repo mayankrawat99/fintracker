@@ -1,0 +1,128 @@
+
+.card{
+  width: 350px;
+  box-shadow:var(--shadow);
+  border-radius: 0.5rem;
+  border: none;
+ flex: 1;
+ margin: 1rem;
+ min-width: 260px;
+
+}
+.card-title{
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 1.3rem 0.2rem 0 0rem;
+  border-bottom: none;
+}
+.card p {
+padding: 0.5rem 0.8rem 0.4rem 0rem;
+opacity: 0.9;
+font-size: 1rem !important; 
+/* margin-bottom: 0.7rem !important; */
+font-family: 'roboto';
+}
+.custom-arrow{
+  padding-right: 4px !important;
+  font-weight: 900 !important;
+  stroke-width: 25;
+
+}
+ p span{
+  font-family: 'roboto';
+  font-weight: 500;
+}
+
+.ant-card-body{
+  padding: 14px 26px !important;
+  height: 100% !important;
+}
+.card-row{
+  gap: 18px;
+  display: flex;
+  justify-content: space-between;
+flex-wrap: wrap;
+margin: 1rem 1.3rem;
+  
+}
+
+.dash-card {
+  box-shadow:var(--shadow);
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  position: relative;
+  overflow: hidden;
+  min-width: 280px;
+}
+
+.dash-card:hover {
+  transform: translateY(-12px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.dash-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 40%;
+  width: 200%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: skewX(-25deg);
+  transition: 0.7s ease-in-out;
+}
+
+.dash-card:hover::before {
+  left: 95%;
+}
+
+.expense-display {
+  font-size: 2rem;
+  color: white;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+
+.add-expense-btn {
+  background-color: #0374ec;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+ 
+}
+.dash-title{
+  color:white !important
+}
+
+.add-expense-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.03);
+}
+
+.add-expense-btn:active {
+  box-shadow: none;
+  transform: translateY(2px);
+}
+.ant-modal-footer{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.confirmbtn{
+  transition: all ease 0.3s;
+  color: #fff;
+   border:none ;
+   padding: 10px;
+   border-radius:6px;
+   margin: 0.2rem 0;
+}
+.confirmbtn:hover{
+cursor:'pointer';
+scale: 1.03;
+ transform: translateY(-2px);
+ opacity: 0.8;
+}
