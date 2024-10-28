@@ -1,7 +1,8 @@
+import React from "react";
 import {BrowserRouter as Router , Route , Routes} from "react-router-dom";
 import LandingPage from "./Pages/LandingPage"
 import Dashboard from "./Pages/Dashboard"
-import { toast, ToastContainer } from 'react-toastify';
+const {ToastContainer,toast} = React.lazy(() => import('react-toastify'));
 import "react-toastify/dist/ReactToastify.css";
 import Notfound from "./Pages/Notfound"
 import { auth } from "./firebase";

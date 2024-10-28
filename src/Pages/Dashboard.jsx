@@ -1,4 +1,5 @@
 import React, { useEffect, useState,useLayoutEffect } from "react";
+import React from 'react';
 import Header from "../Components/LandingPage/Header";
 import Cards from "../Components/Cards/Cards";
 import AddExpense from "../Components/Modals/AddExpense";
@@ -10,7 +11,7 @@ import { toast } from "react-toastify";
 import Ttable from "../Components/TransactionsTable/Ttable";
 import Loader from "../Components/Loader";
 import NoTransactions from "../NoTransactions";
-import ChartComponent from "../Components/Charts/ChartComponent";
+const ChartComponent = React.lazy(() => import('../Components/Charts/ChartComponent'));
 import formatDate from '../assets/formatDate'
 
 function Dashboard() {
