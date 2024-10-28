@@ -31,3 +31,14 @@ opacity: 0.75;
   opacity: 0.7;
 
 }
+.input-container {
+  position: relative; /* Make the container relative */
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px; /* Adjust according to your layout */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%);
+  cursor: pointer; /* Change cursor to pointer */
+}
